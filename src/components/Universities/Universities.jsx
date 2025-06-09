@@ -25,11 +25,12 @@ export function Universities() {
                 <div className="grid">
                     {universities ? (
                         universities.map((university) => (
-                            <UniversityCard
-                                key={"UniversityCard-" + university.id}
-                                name={university.nombre}
-                                fullName={university.nombreCompleto}
-                            />
+                            <a key={"University-" + university.id} href="">
+                                <UniversityCard
+                                    name={university.nombre}
+                                    fullName={university.nombreCompleto}
+                                />
+                            </a>
                         ))
                     ) : (
                         <p>Cargando...</p>

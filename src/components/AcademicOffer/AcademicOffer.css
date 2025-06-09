@@ -7,17 +7,17 @@
 
 .academicOffer h2 {
     text-align: center;
-    color: #333333;
 }
 
-.academicOffer ul {
+.academicOffer .grid {
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     gap: 12px;
 }
 
-.academicOffer li {
+.academicOffer .grid a {
+    display: block;
     background-color: #1e9dba;
     color: white;
     padding: 16px 18px;
@@ -27,6 +27,6 @@
     cursor: pointer;
 }
 
-.academicOffer li:hover {
+.academicOffer .grid a:hover {
     background-color: #007a96;
 }

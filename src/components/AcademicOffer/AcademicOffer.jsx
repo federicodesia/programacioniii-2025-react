@@ -21,17 +21,17 @@ export function AcademicOffer() {
             <div className="container">
                 <h2>OFERTA ACADÉMICA</h2>
 
-                <ul>
+                <div className="grid">
                     {offers ? (
                         offers.map((offer) => (
-                            <li key={"AcademicOffer-" + offer.id}>
+                            <a key={"AcademicOffer-" + offer.id} href="">
                                 {offer.nombre}
-                            </li>
+                            </a>
                         ))
                     ) : (
                         <p>Cargando...</p>
                     )}
-                </ul>
+                </div>
             </div>
         </section>
     );
