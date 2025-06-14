@@ -1,7 +1,7 @@
-import { AcademicOffer } from "../components/AcademicOffer/AcademicOffer";
-import { Banner } from "../components/Banner/Banner";
-import { DualBanner } from "../components/DualBanner/DualBanner";
-import { Universities } from "../components/Universities/Universities";
+import { AcademicOffer } from "../../components/AcademicOffer/AcademicOffer";
+import { Banner } from "../../components/Banner/Banner";
+import { DualBanner } from "../../components/DualBanner/DualBanner";
+import { Universities } from "../../components/Universities/Universities";
 
 export function HomePage() {
     return (

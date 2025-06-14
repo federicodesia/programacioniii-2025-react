@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { HomePage } from "./pages/HomePage";
+import { HomePage } from "./pages/HomePage/HomePage";
 import { UniversityPage } from "./pages/UniversityPage/UniversityPage";
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
