@@ -1,6 +1,7 @@
 import "./Universities.css";
 import { useEffect, useState } from "react";
 import { UniversityCard } from "../UniversityCard/UniversityCard";
+import { Link } from "react-router-dom";
 
 export function Universities() {
     const [universities, setUniversities] = useState(undefined);
@@ -25,12 +26,15 @@ export function Universities() {
                 <div className="grid">
                     {universities ? (
                         universities.map((university) => (
-                            <a key={"University-" + university.id} href="">
+                            <Link
+                                key={"University-" + university.id}
+                                to={"/universidades/" + university.id}
+                            >
                                 <UniversityCard
                                     name={university.nombre}
                                     fullName={university.nombreCompleto}
                                 />
-                            </a>
+                            </Link>
                         ))
                     ) : (
                         <p>Cargando...</p>

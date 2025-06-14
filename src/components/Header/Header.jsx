@@ -1,18 +1,19 @@
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 export function Header() {
     return (
         <header>
             <div className="container">
-                <a href="">
-                    <img src="images/Logo.png" alt="Logo CUCH" />
-                </a>
+                <Link to="/">
+                    <img src="/images/Logo.png" alt="Logo CUCH" />
+                </Link>
 
                 <nav>
-                    <a href="">CARRERAS</a>
-                    <a href="">UNIVERSIDADES</a>
-                    <a href="">INSTITUCIONAL</a>
-                    <a href="">NOTICIAS</a>
+                    <Link to="/">CARRERAS</Link>
+                    <Link to="/">UNIVERSIDADES</Link>
+                    <Link to="/">INSTITUCIONAL</Link>
+                    <Link to="/">NOTICIAS</Link>
                 </nav>
             </div>
         </header>

@@ -1,0 +1,31 @@
+.universitySection .container {
+    display: flex;
+    align-items: start;
+    gap: 32px;
+}
+
+.universitySection .column {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.universitySection a {
+    width: max-content;
+    border: 2px solid #1e9dba;
+    color: #1e9dba;
+    padding: 16px 18px;
+    border-radius: 16px;
+    transition: 0.3s ease;
+}
+
+.universitySection a:hover {
+    background-color: #1e9dba;
+    color: white;
+}
+
+@media (max-width: 850px) {
+    .universitySection .container {
+        flex-direction: column;
+    }
+}

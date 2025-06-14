@@ -1,5 +1,6 @@
 import "./AcademicOffer.css";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export function AcademicOffer() {
     const [offers, setOffers] = useState(undefined);
@@ -24,9 +25,12 @@ export function AcademicOffer() {
                 <div className="grid">
                     {offers ? (
                         offers.map((offer) => (
-                            <a key={"AcademicOffer-" + offer.id} href="">
+                            <Link
+                                key={"AcademicOffer-" + offer.id}
+                                to={"/ofertas/" + offer.id}
+                            >
                                 {offer.nombre}
-                            </a>
+                            </Link>
                         ))
                     ) : (
                         <p>Cargando...</p>
